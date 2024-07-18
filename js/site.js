@@ -19,7 +19,6 @@ function reverse(message){
 
 function displayMessage(inputMessage, reverseMessage){
   
-   //remove the d-non class from the alert.
    let alertElement = document.getElementById("alertMessage");
 
    alertElement.style.opacity = 1;
