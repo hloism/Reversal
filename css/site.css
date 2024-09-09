@@ -10,10 +10,10 @@
 
 /* #region Element Overrides */
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-    font-family: var(--lm-heading-font);
+    font-family: var(--hm-heading-font);
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--lm-title-color);
+    color: var(--hm-title-color);
     letter-spacing: .1rem;
 }
 
@@ -53,13 +53,13 @@ footer {
 /* #endregion Main Template */
 
 .mainTitle {
-    font-family: var(--lm-title-font);
+    font-family: var(--hm-title-font);
     font-size: 3rem;
     line-height: 4rem;
 }
 
 .subTitle {
-    font-family: var(--lm-subtitle-font);
+    font-family: var(--hm-subtitle-font);
     font-size: 1.5rem;
     line-height: 1.1;
     font-weight: 600;
@@ -67,7 +67,7 @@ footer {
 }
 
 .descText {
-    font-family: var(--lm-body-font);
+    font-family: var(--hm-body-font);
     font-size: 1rem;
     line-height: 1.1;
     font-weight: 400;
@@ -79,7 +79,7 @@ footer {
 }
 
 body {
-    color: var(--lm-dark-color);
+    color: var(--hm-dark-color);
     background: #ECE9E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

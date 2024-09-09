@@ -81,42 +81,38 @@
             <div class="col-12 col-lg-8">
                 <pre class="line-numbers">
                     <code class="language-javascript">
-//Get values from the screen and display
-function getValues() {
-let inputMessage = document.getElementById("message").value;
-let alertMessage = document.getElementById("alertBox");
-let reversedMessage = reverse(inputMessage);
-
-alertMessage.innerHTML = displayMessage(inputMessage, reversedMessage);
+//get values from the screen and display them
+function getValues(){
+   let inputMessage = document.getElementById("message").value;
+   let alertMessage = document.getElementById("alertMessage");
+   
+   let reverseMessage = reverse(inputMessage);
+   alertMessage.innerHTML = displayMessage(inputMessage, reverseMessage);
 }
 
-function reverse(inputMessage) {
-let reversedMessage = "";
-for(let i = inputMessage.length-1; i >= 0; i--) {
-reversedMessage += inputMessage[i];
+//return the message in reverse
+function reverse(message){
+      let reverseMessage = "";
+      for(let index = message.length-1; index>=0; index--){
+         reverseMessage += message[index]; 
+      }
+
+      return reverseMessage;
 }
-return reversedMessage;
-}
 
-function displayMessage(inputMessage, reversedMessage) {
+//display the message
+function displayMessage(inputMessage, reverseMessage){
+  
+   let alertElement = document.getElementById("alertMessage");
 
-let alertElement = document.getElementById("alertBox");
+   alertElement.style.opacity = 1;
 
-//alertElement.classList.remove("d-none");
-alertElement.style.opacity = 1;
 
-let message =
-`<div>The message, <strong>${inputMessage}</strong> in reverse is: <strong>${reversedMessage}</strong></div>`
-;
-return message;
+   let message = The message,${inputMessage}, reversed is ${reverseMessage};
+   return message;
 }
                     </code>
                 </pre>
-            </div>
-            <div class="col-12 col-lg-4">
-                <p>The code is structured in one function</p>
-                <h5>getValue2</h5>
-                <p>Displays the user entered message!</p>
             </div>
         </div>
         </div>

@@ -1,24 +1,25 @@
 //get values from the screen and display them
-function getValues(){
+function getValues() {
    let inputMessage = document.getElementById("message").value;
    let alertMessage = document.getElementById("alertMessage");
-   
+
    let reverseMessage = reverse(inputMessage);
    alertMessage.innerHTML = displayMessage(inputMessage, reverseMessage);
 }
 
 //return the message in reverse
-function reverse(message){
-      let reverseMessage = "";
-      for(let index = message.length-1; index>=0; index--){
-         reverseMessage += message[index]; 
-      }
+function reverse(message) {
+   let reverseMessage = "";
+   for (let index = message.length - 1; index >= 0; index--) {
+      reverseMessage += message[index];
+   }
 
-      return reverseMessage;
+   return reverseMessage;
 }
 
-function displayMessage(inputMessage, reverseMessage){
-  
+//display the message
+function displayMessage(inputMessage, reverseMessage) {
+
    let alertElement = document.getElementById("alertMessage");
 
    alertElement.style.opacity = 1;
